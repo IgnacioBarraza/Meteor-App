@@ -36,7 +36,7 @@ export const Pacientform = () => {
             setRut("")
 
         } else {
-            if (!nombre && !paterno && !materno && !rut && !regions && !comun && !postal) return
+            if (!nombre || !paterno || !materno || !rut || !regions || !comun || !postal) return
 
             PacientCollection.insert({
                 name: nombre.trim(),
